@@ -1,0 +1,115 @@
+---
+gamma_detector:
+  name: <folder where you put Detector.dat>
+  parameters:
+    distance_cm: 50
+    height_cm: 1
+    dead_time_per_pulse: 10
+    latitude_deg: 35.0
+    longitude_deg: 253.4
+    elevation_m: 1620
+sources:
+- isotope: Am241
+  configurations:
+    - Am241,100uCi
+    - Am241,100uCi{ad=10,an=13}
+    - Am241,100uCi{ad=10,an=2.25}
+    - Am241,100uCi{ad=20,an=82}
+    - Am241,100uCi{ad=30,an=2.25}
+    - Am241,100uCi{ad=30,an=26}
+    - Am241,100uCi{ad=50,an=2.25}
+- isotope: Ba133
+  configurations:
+    - Ba133,100uCi
+    - Ba133,100uCi{ad=10,an=13}
+    - Ba133,100uCi{ad=10,an=2.25}
+    - Ba133,100uCi{ad=20,an=82}
+    - Ba133,100uCi{ad=30,an=2.25}
+    - Ba133,100uCi{ad=30,an=26}
+    - Ba133,100uCi{ad=50,an=2.25}
+- isotope: Bi207
+  configurations:
+    - Bi207,100uCi
+    - Bi207,100uCi{ad=10,an=13}
+    - Bi207,100uCi{ad=10,an=2.25}
+    - Bi207,100uCi{ad=20,an=82}
+    - Bi207,100uCi{ad=30,an=2.25}
+    - Bi207,100uCi{ad=30,an=26}
+    - Bi207,100uCi{ad=50,an=2.25}
+- isotope: Cf252
+  configurations:
+    - Cf252,100uCi
+    - Cf252,100uCi{ad=10,an=13}
+    - Cf252,100uCi{ad=10,an=2.25}
+    - Cf252,100uCi{ad=20,an=82}
+    - Cf252,100uCi{ad=30,an=2.25}
+    - Cf252,100uCi{ad=30,an=26}
+    - Cf252,100uCi{ad=50,an=2.25}
+- isotope: Co60
+  configurations:
+    - Co60,100uCi
+    - Co60,100uCi{ad=10,an=13}
+    - Co60,100uCi{ad=10,an=2.25}
+    - Co60,100uCi{ad=20,an=82}
+    - Co60,100uCi{ad=30,an=2.25}
+    - Co60,100uCi{ad=30,an=26}
+    - Co60,100uCi{ad=50,an=2.25}
+- isotope: Cs137
+  configurations:
+    - Cs137,100uCi
+    - Cs137,100uCi{ad=10,an=13}
+    - Cs137,100uCi{ad=10,an=2.25}
+    - Cs137,100uCi{ad=20,an=82}
+    - Cs137,100uCi{ad=30,an=2.25}
+    - Cs137,100uCi{ad=30,an=26}
+    - Cs137,100uCi{ad=50,an=2.25}
+- isotope: Eu152
+  configurations:
+    - Eu152,100uCi
+    - Eu152,100uCi{ad=10,an=13}
+    - Eu152,100uCi{ad=10,an=2.25}
+    - Eu152,100uCi{ad=20,an=82}
+    - Eu152,100uCi{ad=30,an=2.25}
+    - Eu152,100uCi{ad=30,an=26}
+    - Eu152,100uCi{ad=50,an=2.25}
+- isotope: U232
+  configurations:
+    - U232,100uCi
+    - U232,100uCi{ad=10,an=13}
+    - U232,100uCi{ad=10,an=2.25}
+    - U232,100uCi{ad=20,an=82}
+    - U232,100uCi{ad=30,an=2.25}
+    - U232,100uCi{ad=30,an=26}
+    - U232,100uCi{ad=50,an=2.25}
+- isotope: U238
+  configurations:
+    - FiestaWare
+    - U238Fiesta
+    - U238,100uCi
+    - U238,100uCi{ad=10,an=13}
+    - U238,100uCi{ad=10,an=2.25}
+    - U238,100uCi{ad=20,an=82}
+    - U238,100uCi{ad=30,an=2.25}
+    - U238,100uCi{ad=30,an=26}
+    - U238,100uCi{ad=50,an=2.25}
+- isotope: K40
+  configurations:
+    - PotassiumInSoil
+    - K40,100uCi
+    - K40,100uCi{ad=10,an=13}
+    - K40,100uCi{ad=10,an=2.25}
+    - K40,100uCi{ad=20,an=82}
+    - K40,100uCi{ad=30,an=2.25}
+    - K40,100uCi{ad=30,an=26}
+    - K40,100uCi{ad=50,an=2.25}
+- isotope: Ra226
+  configurations:
+    - UraniumInSoil
+- isotope: Th232
+  configurations:
+    - ThoriumInSoil
+    - WeldingRod
+- isotope: Cosmic
+  configurations:
+    - Cosmic
+...
