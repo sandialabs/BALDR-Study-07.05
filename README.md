@@ -1,5 +1,7 @@
 This repo contains the code, data, and best model for the BALDR study titled, "A Semi-Supervised Learning Method to Produce Explainable Radioisotope Proportion Estimates for NaI-based Synthetic and Measured Gamma Spectra."
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10223445.svg)](https://doi.org/10.5281/zenodo.10223445)
+
 
 # Authors
 
