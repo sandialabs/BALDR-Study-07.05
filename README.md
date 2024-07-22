@@ -1,14 +1,9 @@
 This repo contains the code, data, and best model for the BALDR study titled, "A Semi-Supervised Learning Method to Produce Explainable Radioisotope Proportion Estimates for NaI-based Synthetic and Measured Gamma Spectra."
 
-# Citing
-
-If citing this work, please refer to the Sandia (SAND) report [here](https://doi.org/10.2172/2335904).
-
 # Authors
 
 - Alan Van Omen (ajvanom@sandia.gov)
 - Tyler Morrow (tmorro@sandia.gov)
-
 
 # Acknowledgements
 
@@ -64,10 +59,26 @@ At a high level, the code represents the following process to conduct the study:
 
 - `seeds.pcf` was synthesized using `seeds.yaml` and `Detector.dat` with the PyRIID `SeedSynthesizer` which calls into GADRAS to perform an injection.
 - Seeds were split into foreground and background seeds, then each set was mixed using the PyRIID `SeedMixer`.
-    - Additional splits were also performed to divide in-distribution and out-of-distribution data.
+  - Additional splits were also performed to divide in-distribution and out-of-distribution data.
 - Mixed seeds were turned into noisy gamma spectra randomly varying in terms of signal-to-noise ratio using the PyRIID `StaticSynthesizer`.
 - Training data was then used to fit many models. Note that training consisted of tuning which looked for optimal hyperparameters, and then a final step which trained the "optimal" model.
 - With a model found, the test data was then used by a Jupyter notebook to generate results, mainly plots.
+
+# Citing
+
+If citing this work, please refer to the Sandia (SAND) report [here](https://doi.org/10.2172/2335904).
+
+```bibtex
+@article{osti_2335904,
+    title = {A semi-supervised learning method to produce explainable radioisotope proportion estimates for NaI-based synthetic and measured gamma spectra},
+    author = {Van Omen, Alan and Morrow, Tyler},
+    doi = {10.2172/2335904},
+    url = {https://www.osti.gov/biblio/2335904},
+    place = {United States},
+    year = {2024},
+    month = {2}
+}
+```
 
 # References
 
