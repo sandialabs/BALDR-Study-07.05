@@ -1,7 +1,8 @@
 This repo contains the code, data, and best model for the BALDR study titled, "A Semi-Supervised Learning Method to Produce Explainable Radioisotope Proportion Estimates for NaI-based Synthetic and Measured Gamma Spectra."
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10223445.svg)](https://doi.org/10.5281/zenodo.10223445)
+# Citing
 
+If citing this work, please refer to the Sandia (SAND) report [here](https://doi.org/10.2172/2335904).
 
 # Authors
 
@@ -18,7 +19,6 @@ The authors are with Sandia National Laboratories, a multi-mission laboratory ma
 # License and Copyright
 
 License and copyright details can be found [here](./LICENSE.txt).
-
 
 # Manifest
 
@@ -49,7 +49,6 @@ Note that only the unshielded variants of the seeds were actually used in the st
 `measurements.h5` contains all lab measurements used in the study, including a background measurement.
 Both `.pcf` and `.h5` can be read in using PyRIID's `read_pcf()` and `read_hdf()` functions, respectively.
 
-
 ### `study/models/`
 
 If you do not want to perform synthesis and train a model, this directory contains the pre-trained "best" model we found which was then used to generate the primary, final results.
@@ -58,7 +57,6 @@ If you are re-running the experiment, note that this folder is where models are 
 
 The ONNX file will require the ONNX runtime to load and execute; it is primary a binary file of sorts and not meant to be viewed.
 Its accompanying JSON file can be viewed in your text editor of choice.
-
 
 # Methodology
 
@@ -71,14 +69,12 @@ At a high level, the code represents the following process to conduct the study:
 - Training data was then used to fit many models. Note that training consisted of tuning which looked for optimal hyperparameters, and then a final step which trained the "optimal" model.
 - With a model found, the test data was then used by a Jupyter notebook to generate results, mainly plots.
 
-
 # References
 
 1. [PCF File Format][1]
 2. [GADRAS-DRF Version 18][2]
 3. [PyRIID][3]
 4. [ONNX][4]
-
 
 [1]: https://doi.org/10.2172/1762353
 [2]: https://doi.org/10.2172/1592910
